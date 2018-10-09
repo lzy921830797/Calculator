@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
             }
         });
+
+        Button equ = findViewById(R.id.equ);
     }
 
     class myClickListener implements View.OnClickListener{
