@@ -10,42 +10,53 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:gravity="bottom|end"
         android:layout_columnSpan="4"
-        android:lines="12" />
+        android:lines="15" />
 
     <Button
         android:id="@+id/clear"
-        android:layout_width="190dp"
+        android:layout_width="96dp"
         android:layout_height="50dp"
-        android:layout_columnSpan="2"
         android:text="C" />
 
     <Button
-        android:id="@+id/add"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:layout_columnSpan="2"
-        android:text="+" />
-
-    <Button
-        android:id="@+id/num1"
+        android:id="@+id/div"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="1" />
+        android:text="/" />
 
     <Button
-        android:id="@+id/num2"
+        android:id="@+id/mul"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="2" />
+        android:text="*" />
 
     <Button
-        android:id="@+id/num3"
+        android:id="@+id/delete"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="3" />
+        android:text="del" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:text="9" />
 
     <Button
         android:id="@+id/sub"
@@ -72,28 +83,30 @@
         android:text="6" />
 
     <Button
-        android:id="@+id/mul"
+        android:id="@+id/add"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="*" />
+        android:text="+" />
+
 
     <Button
-        android:id="@+id/num7"
+        android:id="@+id/num1"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="7" />
+        android:text="1" />
 
     <Button
-        android:id="@+id/num8"
+        android:id="@+id/num2"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="8" />
+        android:text="2" />
 
     <Button
-        android:id="@+id/num9"
+        android:id="@+id/num3"
         android:layout_width="96dp"
         android:layout_height="50dp"
-        android:text="9" />
+        android:text="3" />
+
 
     <Button
         android:id="@+id/equ"
@@ -101,6 +114,12 @@
         android:layout_height="99dp"
         android:layout_rowSpan="2"
         android:text="=" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:text="%" />
 
     <Button
         android:id="@+id/num0"
@@ -114,10 +133,5 @@
         android:layout_height="50dp"
         android:text="." />
 
-    <Button
-        android:id="@+id/div"
-        android:layout_width="96dp"
-        android:layout_height="50dp"
-        android:text="/" />
 
 </GridLayout>

@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.text);
+        setContentView(R.layout.second_layout);
+        textView = findViewById(R.id.text);
         Button num0 = findViewById(R.id.num0);
         Button num1 = findViewById(R.id.num1);
         Button num2 = findViewById(R.id.num2);
@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Button sub = findViewById(R.id.sub);
         Button div = findViewById(R.id.div);
         Button mul = findViewById(R.id.mul);
+        Button point = findViewById(R.id.point);
+        Button percent = findViewById(R.id.percent);
+        Button clear = findViewById(R.id.clear);
+        Button equ = findViewById(R.id.equ);
+        Button delete = findViewById(R.id.delete);
 
         num0.setOnClickListener(new myClickListener());
         num1.setOnClickListener(new myClickListener());
@@ -44,8 +49,9 @@ public class MainActivity extends AppCompatActivity {
         sub.setOnClickListener(new myClickListener());
         div.setOnClickListener(new myClickListener());
         mul.setOnClickListener(new myClickListener());
+        point.setOnClickListener(new myClickListener());
+        percent.setOnClickListener(new myClickListener());
 
-        Button clear = findViewById(R.id.clear);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button equ = findViewById(R.id.equ);
     }
 
     class myClickListener implements View.OnClickListener{
